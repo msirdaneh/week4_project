@@ -55,4 +55,4 @@ melted      = melt(data, id = id_labels, measure.vars = data_labels)
 # get the mean if dataset using dcast function and applying the mean function
 tidyData   = dcast(melted, subject + Activity_Label ~ variable, mean)
 
-write.table(tidyData, file = "tidy_data.txt")
+write.table(tidyData, file = "tidy_data.txt", row.name=FALSE)
