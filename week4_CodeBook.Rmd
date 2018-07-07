@@ -1,7 +1,7 @@
-# Code Book
+# Week4 Progamming Assigment Code Book
 This is a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data.
 
-## Data Sources
+## Data Set
  * Data Sets:[https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip]
  * Data Set Description:[http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones]
  
@@ -16,12 +16,12 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
  
  1. **'features.txt'**: List of all features.
  2. **'activity_labels.txt'**: Links the class labels with their activity name.
- 3. **'train/X_train.txt'**: Training data sets.
- 4. **'train/y_train.txt'**: Training labels.
- 5. **'test/X_test.txt'**: Test set.
- 6. **'test/y_test.txt'**: Test labels.
+ 3. **'X_train.txt'**: Training data sets.
+ 4. **'y_train.txt'**: Training labels.
+ 5. **'X_test.txt'**: Test set.
+ 6. **'y_test.txt'**: Test labels.
  
-## Required pacjages for Data Processing:
+## Required packages for Data Processing:
  1. **reshape2**
  
 ## Data Processing Steps - Transformation:
@@ -29,10 +29,10 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
  2. Load the Features names from features.txt
  3. Rename test data columns using the loaded features vector
  4. Extract only the measurements on the mean and standard deviation for each measurement.
- 5. Bind X data with x labels
+ 5. Bind X data with X labels
  6. Load activities and update ytest
  7. Bind xtest data with ytest data
  8. Apply steps from **1** to **7** an the train dataset
  9. merge the data generated form steps 7 and 8 in onw megred dataset
- 10. calculate the mean of the data by applyig the dcast using mean function on th resulted data
+ 10. calculate the mean of the data by applying the dcast using mean function on th resulted data
  11. write the resulted data into txt file names **tiday_data.txt**
